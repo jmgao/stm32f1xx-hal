@@ -92,6 +92,8 @@
 //! [examples]: https://github.com/stm32-rs/stm32f1xx-hal/tree/master/examples
 
 #![no_std]
+#![allow(deprecated)]
+#![allow(ellipsis_inclusive_range_patterns)]
 
 #[cfg(feature = "device-selected")]
 use embedded_hal as hal;
