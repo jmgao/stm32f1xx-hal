@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [v0.4.0] - 2019-08-09
 
 ### Added
 
@@ -15,7 +15,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Update existing ADC example according to ADC API changes
 - Add new ADC example to read ambient temperature using ADC1 CH16
 - Add `listen` and `unlisten` to `serial::Tx` and `serial::Rx`.
-
+- Add methods `read_data_register` and `write_data_register` to
+  `backup_domain::BackupDomain`, which allow read and write access to the Backup
+  Data Register.
 
 ### Breaking changes
 
@@ -97,7 +99,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - First tagged version
 
-[Unreleased]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.2.1...v0.3.0
 [v0.2.1]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/stm32-rs/stm32f1xx-hal/compare/v0.1.1...v0.2.0
